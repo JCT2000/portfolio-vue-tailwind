@@ -3,7 +3,8 @@
   <div id="home" class="w-full ">
     <div class="min-h-screen flex flex-col items-center overflow-visible md:flex-row">
       <!-- First Column (Image) -->
-      <div class="container mt-5 xs:mt-10 md:mb-0">
+      <div class="container mt-5 xs:mt-10 md:mb-0">q
+        
         <transition
           enter-active-class="animate__animated"
           @before-enter="beforeEnter"
@@ -11,7 +12,7 @@
         >
           <img
             v-if="showImage"
-            src="../assets/images/hero-light-bg.png"
+            src="@/assets/images/hero-light-bg.png"
             alt="Hero Image"
             class="w-full h-full object-cover object-center floating-animation"
           />

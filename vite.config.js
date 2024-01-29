@@ -1,15 +1,15 @@
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
+import { defineConfig } from 'vite';
+import Vue from '@vitejs/plugin-vue';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [Vue()],
   resolve: {
     alias: {
-      "@": "/src",
+      '@': '/src',
     },
   },
   build: {
-    assetsInclude: ["**/*.jpg", "**/*.JPG", "**/*.jpeg", "**/*.png", "**/*.gif"],
+    assetsInclude: '**/*.+(png|jpg|jpeg|gif|webp|svg|ico)',
   },
+  // other configuration options...
 });

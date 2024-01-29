@@ -13,7 +13,7 @@
       >
         <swiper-slide>
           <img
-            src="../assets/images/H254K00998.JPG"
+            src="@/assets/images/H254K00998.png"
             alt="My image"
             class="object-cover object-center"
           />
