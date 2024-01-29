@@ -13,8 +13,8 @@
       >
         <swiper-slide>
           <img
-            src="../assets/images/H254K00998.jpg"
-            alt="sample"
+            src="../assets/images/H254K00998.JPG"
+            alt="My image"
             class="object-cover object-center"
           />
         </swiper-slide>
@@ -175,6 +175,7 @@
 
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
+
 import "swiper/css";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
