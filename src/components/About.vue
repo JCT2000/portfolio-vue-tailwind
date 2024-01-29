@@ -1,17 +1,15 @@
 <template>
   <div
-    class="w-full h-full xs:min-h-screen py-10 px-10 md:px-0 flex flex-row flex-wrap justify-center items-center"
+    class="min-w-screen w-full h-full xs:min-h-screen flex flex-col md:flex-row justify-center items-center py-10 px-10 md:px-0"
   >
     <!-- Image Column -->
-    <div
-      class="w-full mt-10 xs:mt-20 lg:mt-0 md:mt-0 md:w-5/12 lg:w-5/12 xs:w-1/3  rounded-lg flex justify-center items-center"
-    >
+    <div class="w-3/4 mt-10 sm:mt-0 rounded-lg justify-center items-center">
       <!-- Swiper component for image slides -->
       <swiper
         :effect="'cards'"
         :grabCursor="true"
         :modules="modules"
-        class="mySwiper w-[400px] md:w-[350px] h-[450px]"
+        class="mySwiper w-[200px] h-[255px] xs:w-[350px] xs:h-[450px]"
       >
         <swiper-slide>
           <img
@@ -39,9 +37,9 @@
       </div> -->
 
     <!-- About Me Column -->
-    <div class="w-full py-10 md:w-1/2 sm:mx-10">
-      <h1 class="text-3xl font-bold mb-2 text-center md:text-left">About Me</h1>
-      <p class="text-sm mb-4 text-justify">
+    <div class="w-full mx-10 mt-3">
+      <h1 class="text-xl sm:text-3xl font-bold mb-2 text-center md:text-left">About Me</h1>
+      <p class="text-xs sm:text-sm mb-4 text-justify indent-8">
         I'm a recent graduate with a strong passion for web development and design. My skills and
         design principles are well-honed, and I'm eager to apply them to real-world projects. I
         prioritize creating user-friendly websites and visually appealing, responsive interfaces.
@@ -63,9 +61,9 @@
                 'bg-yana-pink': selectedTab === value,
                 'bg-gray-500': selectedTab !== value,
               }"
-              class="px-4 py-2 text-white rounded focus:outline-none focus:shadow-outline-blue active:bg-slate-700"
+              class="px-2 py-2 text-white text-xs sm:text-sm rounded focus:outline-none focus:shadow-outline-blue active:bg-slate-700"
             >
-              <font-awesome-icon :icon="['fas', icon]" class="mr-2" />
+              <font-awesome-icon :icon="['fas', icon]" class="" />
               {{ label }}
             </button>
           </div>
@@ -88,10 +86,10 @@
                   />
                 </div>
                 <div class="flex-1 min-w-0">
-                  <p class="text-sm font-medium text-[#ffffff]">
+                  <p class="text-xs sm:text-sm font-medium text-[#ffffff]">
                     {{ experience.position }}
                   </p>
-                  <p class="text-sm text-gray-500 truncate dark:text-gray-200">
+                  <p class="text-xs sm:text-sm text-gray-500 truncate dark:text-gray-200">
                     {{ experience.company }}
                   </p>
                 </div>
@@ -120,15 +118,15 @@
                   />
                 </div>
                 <div class="flex-1 min-w-0">
-                  <p class="text-sm font-medium text-[#ffffff]">
+                  <p class="text-xs sm:text-sm font-medium text-[#ffffff]">
                     {{ edu.degree }}
                   </p>
-                  <p class="text-sm text-gray-500 truncate dark:text-gray-200">
+                  <p class="text-xs sm:text-sm text-gray-500 truncate dark:text-gray-200">
                     {{ edu.university }}
                   </p>
                 </div>
                 <div
-                  class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white"
+                  class="inline-flex items-center text-xs sm:text-sm font-semibold text-gray-900 dark:text-white"
                 >
                   {{ edu.date }}
                 </div>
@@ -152,15 +150,15 @@
                   />
                 </div>
                 <div class="flex-1 min-w-0">
-                  <p class="text-sm font-medium text-[#ffffff]">
+                  <p class="text-xs sm:text-sm font-medium text-[#ffffff]">
                     {{ cert.title }}
                   </p>
-                  <p class="text-sm text-gray-500 truncate dark:text-gray-200">
+                  <p class="text-xs sm:text-sm text-gray-500 truncate dark:text-gray-200">
                     {{ cert.issuer }}
                   </p>
                 </div>
                 <div
-                  class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white"
+                  class="inline-flex items-center text-xs sm:text-sm font-semibold text-gray-900 dark:text-white"
                 >
                   {{ cert.issued_by }}
                 </div>
@@ -216,18 +214,6 @@ export default {
         },
       ],
       experience: [
-        {
-          position: "Information Technology Intern",
-          company: "B.A Domingo Realty",
-          amount: "$320",
-          image: "../src/assets/company/BADomingoRealty.jpg",
-        },
-        {
-          position: "Bagger",
-          company: "Super Shopping Market Inc.",
-          amount: "$320",
-          image: "../src/assets/company/SM-Logo.jpg",
-        },
         {
           position: "Information Technology Intern",
           company: "B.A Domingo Realty",
