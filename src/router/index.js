@@ -15,7 +15,7 @@ const routes =  [
 
 const router = createRouter({
   mode: 'hash',
-  history: createWebHistory(),
+  history: createWebHistory('/portfolio-vue-tailwind/'),
   routes
 });
 
