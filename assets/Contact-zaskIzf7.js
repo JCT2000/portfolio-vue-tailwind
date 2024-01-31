@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as c,a as o}from"./index-58uWEqYt.js";const s={},n={class:"w-full h-screen bg-gray-600"},a=o("h1",null,"Contact",-1),_=[a];function r(l,d){return c(),t("div",n,_)}const i=e(s,[["render",r]]);export{i as default};
