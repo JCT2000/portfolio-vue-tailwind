@@ -7,9 +7,5 @@ export default defineConfig({
     alias: {
       '@': '/src',
     },
-  },
-  build: {
-    assetsInclude: '**/*.+(png|jpg|jpeg|gif|webp|svg|ico)',
-  },
-  // other configuration options...
+  }
 });
