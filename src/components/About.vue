@@ -225,7 +225,7 @@ export default {
           position: "Bagger",
           company: "Super Shopping Market Inc.",
           amount: "$320",
-          image: "@/assets/company/SM-Logo.jpg",
+          image: "./assets/company/SM-Logo.jpg",
         },
       ],
       education: [
@@ -233,7 +233,7 @@ export default {
           degree: "Bachelor of Science in Computer Science",
           university: "Taguig City University",
           date: "2023",
-          image: "@/assets/company/TCU.jpg",
+          image: "./assets/company/TCU.jpg",
         },
         {
           degree: "ICT: Computer System Servicing",
